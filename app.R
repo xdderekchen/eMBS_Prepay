@@ -164,7 +164,7 @@ server <- function(input, output, session) {
                   highlightSeriesBackgroundAlpha = 0.5,
                   hideOnMouseOut = TRUE) %>%
       dyAxis("x", drawGrid = FALSE) %>%
-      dyAxis("y", label = "Interest Rate")
+      dyAxis("y", label = "Interest Rate") 
   })
   
   
