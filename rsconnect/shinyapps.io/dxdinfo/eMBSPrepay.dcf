@@ -1,0 +1,13 @@
+name: eMBSPrepay
+title: eMBSPrepay
+username:
+account: dxdinfo
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 1747451
+bundleId: 2775595
+url: https://dxdinfo.shinyapps.io/eMBSPrepay/
+when: 1580869404.85438
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: .venv
