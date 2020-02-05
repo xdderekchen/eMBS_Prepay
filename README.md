@@ -8,7 +8,7 @@
 ## Wrokflow
 * Get Pool Level prepayment data from eMBS (https://www.embs.com), The page will be updated monthly.
   * Fannie Mae :  https://www.embs.com/public/html/FNM_eMBSFlashFull.htm
-  * Fraddie Mac:  https://www.embs.com/public/html/FHL_eMBSFlashFull.htm
+  * Freddie Mac:  https://www.embs.com/public/html/FHL_eMBSFlashFull.htm
     
 * Get Interest Rate from Fred. We know prepayment speed is highly related to the changes of interest rate.
   * 30yr : http://www.freddiemac.com/pmms/pmms30.html
