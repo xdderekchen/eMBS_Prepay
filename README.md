@@ -5,7 +5,7 @@
 2. presenting data using R shiny.
 3. testing the reticulate package on shinyapps.io environment.
 
-## Wrokflow
+## Workflow
 * Get Pool Level prepayment data from eMBS (https://www.embs.com), The page will be updated monthly.
   * Fannie Mae :  https://www.embs.com/public/html/FNM_eMBSFlashFull.htm
   * Freddie Mac:  https://www.embs.com/public/html/FHL_eMBSFlashFull.htm
