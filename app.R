@@ -23,8 +23,11 @@ source("./data_utils.R")
 
 ###http://rstudio.github.io/shiny/tutorial/#scoping
 #create Objects visible across all sessions
-LoadedData <- init_data(mode="P")
+LoadedData <- init_data(mode="P") #Using python data processing code
+#LoadedData <- init_data(mode="R") #Using R data processing code
+#For this application, R implementation is faster.
 
+#For this simple demo, we load all data at the beginning as the global variable.
 myDateInfo <-  LoadedData[["date"]]
 
 get_prepay_title <- function(currentDate)
@@ -162,10 +165,6 @@ server <- function(input, output, session) {
                   hideOnMouseOut = TRUE) %>%
       dyAxis("x", drawGrid = FALSE) %>%
       dyAxis("y", label = "Interest Rate")
-    
-    #%>%
-    #  dyOptions(stepPlot = TRUE) %>%  
-    #  dyOptions(stepPlot = TRUE, colors = RColorBrewer::brewer.pal(3, "Set2"))
   })
   
   

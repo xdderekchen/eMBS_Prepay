@@ -1,6 +1,17 @@
 
+#' get needed data (prepayment and interest rate)
+#'
+#' @param mode either R or other. If it is R, then use R implementation, otherwise use Python implementation.
+#'
+#' @return
+#' @export
+#'
+#' @examples
+#'      init_data(mode="R")   # using R implementation
+#'      init_data(mode="P")   # using Python implemenation through  reticulate package.
 init_data <- function(mode="R")
 {
+  
   parseDate <- function(inDate)
   {
     inDate <- "Updated Jan 07 2020 4:44 PM EST"
@@ -25,7 +36,7 @@ init_data <- function(mode="R")
     print("using data from Python engine")
    
     if (!Sys.info()[['sysname']] == 'Windows'){
-      
+      # running on shinyapps.io, using the virtual environment.
       reticulate::virtualenv_create(envname = 'python35_env', 
                                     python = '/usr/bin/python3')
       reticulate::virtualenv_install('python35_env', 
