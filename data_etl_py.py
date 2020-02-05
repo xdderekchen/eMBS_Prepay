@@ -4,6 +4,17 @@ import requests
 
 
 def parse_embs_data_py(source="FNM"):
+""" get prepayment data (html) from eMBS websites and return clean data in formatted dataframe.
+
+ Args:
+    source: either FNM or FHL,
+            when FNM: the source data is from https://www.embs.com/public/html/FNM_eMBSFlashFull.htm
+            when FHL: the source data is from https://www.embs.com/public/html/FHL_eMBSFlashFull.htm
+
+ Returns:
+    parsed prepayment data in dataframe format. Ready to be used.
+"""
+
     fnma_URL = "https://www.embs.com/public/html/FNM_eMBSFlashFull.htm"
     fred_URL = "https://www.embs.com/public/html/FHL_eMBSFlashFull.htm"
    
@@ -68,10 +79,9 @@ def parse_embs_data_py(source="FNM"):
 
     
 
-def testme():
+def TEST_parse_embs_data_py():
    #fnma_URL = "https://www.embs.com/public/html/FNM_eMBSFlash.htm"
    #fred_URL = "https://www.embs.com/public/html/FHL_eMBSFlash.htm"
-
    FNMA_data, update_datetime_fnma = parse_embs_data_py( "FNMA")
    FRED_data, update_datetime_fred = parse_embs_data_py( "FRED")
    print(update_datetime_fnma)
