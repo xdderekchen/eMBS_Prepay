@@ -88,7 +88,7 @@ parse_embs_data <- function(source = "FNM")
 get_ir_data_from_FRED <- function(type="30", from_date="2010-01-01")
 {
    url30 = "http://www.freddiemac.com/pmms/pmms30.html"
-   url15 = "http://www.freddiemac.com/pmms/pmms10.html"
+   url15 = "http://www.freddiemac.com/pmms/pmms15.html"
    url =""
    if (type == "15")
    {
